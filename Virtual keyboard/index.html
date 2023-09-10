@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for JQuery link -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- end JQuery link -->
+
+    <!-- for icon link -->
+
+    <script src="https://kit.fontawesome.com/ea029aae02.js" crossorigin="anonymous"></script>
+
+    <!-- end icon link -->
+
+    <!-- for css link -->
+
+    <link rel="stylesheet" href="./css/my.css">
+
+    <!-- end css link -->
+    <title>Virtual keyboard</title>
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="div_title">
+            <span class="title">Virtual keyboard</span>
+            <!-- <select name="" id="select">
+                <option class="option" value="EN">EN</option>
+                <option class="option" value="RU">RU</option>
+                <option class="option" value="AM">AM</option>
+            </select>  -->
+        </div>
+
+        <div class="div_textarea">
+            <textarea name="" id="textarea" cols="50" rows="15"></textarea>
+        </div>
+
+        <div id="div_keyboard">
+
+            <div class="div_buttons">
+                <button class="char_num">1</button>
+                <button class="char_num">2</button>
+                <button class="char_num">3</button>
+                <button class="char_num">4</button>
+                <button class="char_num">5</button>
+                <button class="char_num">6</button>
+                <button class="char_num">7</button>
+                <button class="char_num">8</button>
+                <button class="char_num">9</button>
+                <button class="char_num">0</button>
+                <button id="clear"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+
+            <div class="div_buttons">
+                <button class="char_num char ru am">q</button>
+                <button class="char_num char ru am">w</button>
+                <button class="char_num char ru am">e</button>
+                <button class="char_num char ru am">r</button>
+                <button class="char_num char ru am">t</button>
+                <button class="char_num char ru am">y</button>
+                <button class="char_num char ru am">u</button>
+                <button class="char_num char ru am">i</button>
+                <button class="char_num char ru am">o</button>
+                <button class="char_num char ru am">p</button>
+                <button class="char_num am from_am_to_us">!</button>
+            </div>
+
+            <div class="div_buttons">
+                <button id="upperCase_lowerCase"><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-sort-down activ"></i></button>
+                <button class="char_num char ru am">a</button>
+                <button class="char_num char ru am">s</button>
+                <button class="char_num char ru am">d</button>
+                <button class="char_num char ru am">f</button>
+                <button class="char_num char ru am">g</button>
+                <button class="char_num char ru am">h</button>
+                <button class="char_num char ru am">j</button>
+                <button class="char_num char ru am">k</button>
+                <button class="char_num char ru am">l</button>
+                <button id="enter"><i class="fa-solid fa-pen-to-square"></i></button>
+            </div>
+
+            <div class="div_buttons">
+                <button id="down_keyboard"><i class="fa-solid fa-circle-check"></i></button>
+                <button class="char_num char ru am">z</button>
+                <button class="char_num char ru am">x</button>
+                <button class="char_num char ru am">c</button>
+                <button class="char_num char ru am">v</button>
+                <button class="char_num char ru am">b</button>
+                <button class="char_num char ru am">n</button>
+                <button class="char_num char ru am">m</button>
+                <button class="char_num am from_am_to_us">,</button>
+                <button class="char_num am from_am_to_us">.</button>
+                <button class="char_num am from_am_to_us">?</button>
+            </div>
+
+            <div class="div_buttons">
+                <button class="char_num ru am from_am_to_us">@</button>
+                <button class="char_num ru am from_am_to_us">#</button>
+                <button class="char_num ru am from_am_to_us">$</button>
+                <button class="char_num ru am from_am_to_us">%</button>
+                <button id="space"><i class="fa-solid fa-arrows-left-right-to-line"></i></button>
+                <button class="char_num ru am from_am_to_us">&</button>
+                <button class="char_num ru am from_am_to_us">*</button>
+                <button class="char_num ru am from_am_to_us">(</button>
+                <button class="char_num am from_am_to_us">)</button>
+                <button class="char_num am from_am_to_us">/</button>
+            </div>
+
+            <div class="div_buttons">
+                <button id="change_language">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <span class="char_en">EN</span>
+                    <span class="char_ru">RU</span>
+                    <span class="char_am">AM</span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- for JS link -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- end JS link -->
+</body>
+
+</html>

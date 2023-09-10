@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+body {
+    height: 745px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #108fff;
+}
+
+.container {
+    width: 500px;
+    height: 450px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#password {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50px;
+    font-size: 23px;
+    padding-left: 20px;
+    border: 1px solid #9c9c9c;
+}
+
+.div_password {
+   height: 70px;
+   display: flex;
+   align-items: center;
+   position:relative;
+}
+
+h3 {
+    margin-left: 50px;
+    font-size: 23px;
+    margin-top: 30px;
+    color: #454242;
+    font-weight: 100;
+}
+
+.conditions {
+    height: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.first {
+    margin-top: 30px;
+}
+
+span {
+    font-size: 23px;
+    color: #454242;
+}
+
+.icone {
+    margin-right: 20px;
+    color: #9c9c9c;
+    font-size: 10px;
+}
+
+#eye {
+    font-size: 23px;
+    color: #9c9c9c;
+    position: absolute;
+    top: 24px;
+    right: 70px;
+}
+
+#hidden_password {
+    width: 35px;
+    height: 3px;
+    background: #9c9c9c;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 32.5px;
+    right: 66px;
+    display: none;
+}
+
+.ckeck {
+    display: none;
+}

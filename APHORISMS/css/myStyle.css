@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banier {
+    height: 745px;
+    background: #e8e98b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_for_aphorisms {
+    width: 1200px;
+    height: 650px;
+    background: #70f3ee;
+    border:30px solid #6d78f0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.inner_div {
+    width: 1000px;
+    height: 350px;
+    background: #ffffff;
+    margin-top: 100px;
+    box-shadow: 1px 1px 10px #8e09a0;
+    margin-bottom: 30px;
+}
+
+#btn,
+#button {
+    width: 250px;
+    height: 70px;
+    background: #92f26f;
+    border: none;
+    color:#a0095e;
+    font-size: 15px;
+}
+
+#btn {
+    margin-right: 30px;
+}
+
+.div_for_text {
+    margin-top: 23px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    text-indent: 50px;
+}
+
+.apforisms {
+    margin-top: 30px;
+    font-size: 23px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.aouther {
+    display: flex;
+    justify-content: center;
+}
+
+#name {
+    font-size: 35px;
+}

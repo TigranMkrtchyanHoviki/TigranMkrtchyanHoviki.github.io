@@ -1,0 +1,7 @@
+.div_canvas {
+    height: 729px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #aeff7c;
+}

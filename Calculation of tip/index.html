@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for icons link -->
+    <script src="https://kit.fontawesome.com/ea029aae02.js" crossorigin="anonymous"></script>
+    <!-- end icons link -->
+
+    <!-- for css link -->
+    <link rel="stylesheet" href="./css/my.css">
+    <!-- end css link -->
+
+    <title>Calculation of tip</title>
+</head>
+<body>
+
+    <div class="screen">
+        <div class="date_filed">
+            <div class="hint">Հուշում հաշվիչ</div>
+            <div class="border">
+                 
+                 <div class="div_input">
+                     <p class="title">Պատվերի գումար</p>
+                     <input id="payment" class="input" type="number">
+                     <div class="div_dollar">$</div>
+                 </div>
+                 
+                 
+                 <div class="div_input">
+                    <p class="title">Մատուցողների քանակ</p>
+                    <input id="waiter" class="input" type="number">
+                    <div class="div_icon"><i class="fa-solid fa-person icon_people"></i></div>
+                 </div>
+                 
+                 <div class="div_input">
+                    <p class="title">Ծառայության որակ</p>
+                     <select id="select" class="input select_input" id="select" name="" id="">
+                        <option id="rating" value=""></option>                        
+                     </select>
+                 </div>
+
+                 <div class="div_input div_btn"><button id="btn">Calculate</button></div>
+
+            </div>
+        </div>
+        
+        <div class="text_calculate_of_tip">Թեյավճարի հաշվարկ</div>
+        <div class="div_result"><div class="result"></div></div>
+    </div>
+    
+    <!-- for JS link -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- end JS link -->
+</body>
+</html>

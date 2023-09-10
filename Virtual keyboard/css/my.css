@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#textarea {
+    font-size: 15px;
+}
+
+.screen {
+    height: 745px;
+    padding-top: 30px;
+    position: relative;
+    background: rgb(9,88,166);
+background: -moz-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(1,105,51,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(1,105,51,1) 100%);
+background: linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(1,105,51,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endColorstr="#016933",GradientType=1);
+}
+
+.title {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: -3px -3px 3px #cbc5c5;
+    color: #bb00abbb;
+}
+
+.div_title {
+    display: flex;
+    justify-content: center;
+}
+
+#select {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.div_flags {
+    width: 10px;
+    height: 5px;
+    background: #000;
+}
+
+.div_textarea {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#div_keyboard {
+    width: 100%;
+    height: 350px;
+    background: #002103;
+    position: absolute;
+    top: 415px;
+    left: 0px;
+    display: none;
+}
+
+.div_buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.div_buttons:nth-child(1) {
+    margin-top: 10px;
+}
+
+.char_num,
+#clear,
+#upperCase_lowerCase,
+#enter,
+#down_keyboard,
+#button_language,
+#change_language {
+    width: 100px;
+    height: 50px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #014044;
+    color: #ffffff;
+}
+
+#space {
+    width: 205px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 23px;
+    background: #013539;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+#change_language {
+    width: 310px;
+    height: 50px;
+}
+
+#clear,
+#down_keyboard {
+    font-size: 18px;
+}
+
+#upperCase_lowerCase {
+    position: relative;
+}
+
+/* #button_language {
+    position: relative;
+} */
+
+.activ {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+#language {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 15px;
+}
+
+#change_language {
+    position: relative;
+}
+
+.char_en {
+    position: absolute;
+    top: 13px;
+    right: 100px;
+    color: #0099ff;
+}
+
+.char_ru {
+    position: absolute;
+    top: 13px;
+    right: 50px;
+}
+
+.char_am {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+}
+
+.show {
+    animation: showKeyboard 0.2s linear;
+    display: block;
+}
+
+@keyframes showKeyboard {
+    0% {
+        top: 745px
+    }
+
+    10% {
+        top: 715px;
+    }
+
+    20% {
+        top: 680px;
+    }
+
+    30% {
+        top: 645px;
+    }
+
+    40% {
+        top: 615px;
+    }
+
+    50% {
+        top: 580px;
+    }
+
+    60% {
+        top: 545px;
+    }
+
+    70% {
+        top: 515px;
+    }
+
+    80% {
+        top: 480px;
+    }
+
+    90% {
+        top: 445px;
+    }
+
+    100% {
+        top: 395px;
+    }
+}
+
+.hide {
+    animation: hideKeyboard 0.2s linear;
+}
+
+@keyframes hideKeyboard {
+
+    0% {
+        top: 415px;
+    }
+
+    10% {
+        top: 445px;
+    }
+
+    20% {
+        top: 480px;
+    }
+
+    30% {
+        top: 515px;
+    }
+
+    40% {
+        top: 545px;
+    }
+
+    50% {
+        top: 580px;
+    }
+
+    60% {
+        top: 615px;
+    }
+
+    70% {
+        top: 645px;
+    }
+
+    80% {
+        top: 680px;
+    }
+
+    90% {
+        top: 715px;
+    }
+
+    100% {
+        top: 745px;
+    }
+
+}
+
+/* hover-ի բաժին */
+
+.char_num:hover,
+#clear:hover,
+#upperCase_lowerCase:hover,
+#enter:hover,
+#down_keyboard:hover,
+#space:hover,
+#change_language:hover {
+    background: #015257;
+}

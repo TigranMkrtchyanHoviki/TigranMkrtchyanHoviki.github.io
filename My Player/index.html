@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for icon link -->
+    
+    <script src="https://kit.fontawesome.com/ea029aae02.js" crossorigin="anonymous"></script>
+    
+    <!-- end icon link -->
+
+    <!-- for css link -->
+
+    <link rel="stylesheet" href="./css/myStyle.css">
+
+    <!-- end css link -->
+    <title>Player</title>
+</head>
+<body>
+
+    <!-- Ընդհանուր համակարգչի էկարանին պատկերելու համար -->
+
+    <div class="for_screen">
+
+         <div class="musicul_center">
+
+            <div class="left_section">
+     
+             <!-- ՍԿԻԶԲ - Ձախ դինամիկ ՀԱՄՐ -->
+             
+             <div class="left_speaker">
+                  <img src="./img/dinamik.png" alt="">
+             </div>
+
+             <div class="list_songs">
+                    
+                <div class="first_song div_song">
+                    <audio class="audio" controls src="./audio/balnie_tanci_latina_rok_-_n_roll_-_dzhajv_(z2.fm).mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/chuck-berry_-_you-never-can-tell.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/little-richard_-_ready-teddy.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/motorhead__brit_1974-___hevi-metal_hard_rok_spid-metal_roknroll_-_god_was_never_on_your_side_(z2.fm).mp3"></audio>
+                    <i  class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/rok-n-roll_rocknroll_-_jurij_loza_-_baba_ljuba_(z2.fm).mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+             
+            </div> 
+
+
+            </div>
+     
+             <!-- ԱՎԱՐՏ - Ձախ դինամիկ ՀԱՄՐ -->
+
+             <!-- ՍԿԻԶԲ - աջ և ձախ դինամիկների արանքի պարունակությունը -->
+
+                <!-- ՍԿԻԶԲ - player-ը կառավարելու համար -->
+                 
+                <div class="section_controler">
+
+                    <div class="audio_contrler">
+
+                        <div class="favorite_song">Your favorite songs</div>
+     
+                        <div class="cover">COVER</div>
+     
+                        <div class="progress_container">
+                            <div class="progress"></div>
+                        </div>
+
+                        <audio id="audio" src="./audio/balnie_tanci_latina_rok_-_n_roll_-_dzhajv_(z2.fm).mp3"></audio>
+     
+                        <div class="player_controls">
+                            <div><i id="previous_btn" class="fa-solid fa-backward previous icon"></i></div>
+                            <div id="play_btn" class="div_play"><i class="fa-solid fa-play play icon_p"></i></div>
+                            <div id="pause_btn" class="div_pause"><i class="fa-solid fa-pause pause icon_p"></i></div>
+                            <div><i id="next_btn" class="fa-solid fa-forward next icon"></i></div>
+                        </div>
+
+                        <div class="div_volume">
+                            
+                            <div class="show_volume">
+                                <div class="value_of_volume"></div>
+                                <input id="volume" type="range" value="50">
+                            </div>
+                            
+                            
+                            <div class="text_volume">volume</div>
+                        
+                        </div>
+
+                   </div>
+                    
+                </div>
+
+                <!-- ԱՎԱՐՏ - player-ը կառավարելու համար -->
+     
+            <!-- </div> -->
+
+            <!-- ԱՎԱՐՏ - աջ և ձախ դինամիկների արանքի պարունակությունը -->
+
+            <div class="right_section">
+             
+             <!-- ՍԿԻԶԲ - Աջ դինամիկ ՀԱՄՐ -->
+             
+             <div class="right_speaker">
+                 <img src="./img/dinamik.png" alt="">
+             </div>
+     
+             <!-- ԱՎԱՐՏ - Աջ դինամիկ ՀԱՄՐ -->
+
+             <div class="list_songs">
+                    
+                <div class="first_song div_song">
+                    <audio class="audio" controls src="./audio/stray-cats_-_rock-this-town.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/tanci_rok-n-rolldzhajv_-_i_love_you_cause_i_want_you_(z2.fm).mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/the-beatles_-_rock-and-roll-music.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/tomp3.cc - Jag  The Bambir  Black Blouse.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+                <div class="div_song">
+                    <audio class="audio" controls src="./audio/zz-top_-_tush.mp3"></audio>
+                    <i class="fa-solid fa-play play icon audio_icon"></i>
+                </div>
+             
+            </div> 
+
+            </div>
+
+    </div>
+
+  </div>
+
+
+    <!-- foe js link -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- end js link -->
+</body>
+</html>

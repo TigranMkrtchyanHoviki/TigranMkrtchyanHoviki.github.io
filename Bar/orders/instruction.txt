@@ -1,0 +1,4 @@
+#a79869--- color menu
+#ced0d2--- hover menu
+#a49768--- text color
+#BEAC74--- bg button

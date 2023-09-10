@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game_container {
+    height: 745px;
+    background: #5cfff1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fild_of_game {
+    width: 900px;
+    height: 550px;
+    background: #ffffff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_of_fild_of_game {
+    height: 300px;
+    display: flex;
+}
+
+.div_for_chinga_chung {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #71deff;
+}
+
+.game_result {
+    background: #71ff78;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.div_for_player {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    width: 150px;
+    height: 75px;
+    background: #22a031;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_for_img_bruncq {
+    width: 150px;
+    height: 75px;
+    /* overflow: hidden; */
+    background: url(../imgs/bruncq.jpg);
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+.container_table {
+    margin-bottom: 10px;
+}
+
+.div_for—table {
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+
+.cubik {
+    width: 200px;
+    border: 1px solid #000;
+    text-align: center;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_for_button {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    width: 120px;
+    height: 35px;
+    background: #8e92ffc7;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;;
+}
+
+.name {
+    color: #ff0000;
+    font-size: 23px;
+}
+
+.points {
+    font-size: 30px;
+}
+
+
+

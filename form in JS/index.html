@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for icons link -->
+
+    <script src="https://kit.fontawesome.com/ea029aae02.js" crossorigin="anonymous"></script>
+
+    <!-- end icons link -->
+
+    <!-- for css link -->
+
+    <link rel="stylesheet" href="./css/myStyle.css">
+
+    <!-- end css link -->
+    <title>form in JS</title>
+</head>
+<body>
+    
+    <div class="outerContainer">
+        
+        <div class="innerContainer">
+            
+            <form id="form" action="./tgh/php" mathod="POST">
+                
+                <div class="div_name div_input">
+                    <input id="name" type="text" placeholder="Name" required>
+                </div>
+                
+                <div class="div_email div_input">
+
+                    <input id="email" type="emaile" placeholder="Email" required>
+                </div>
+                
+                <div class="div_password div_input">
+
+                    <input id="password" type="password" placeholder="Password" required>
+                    <div class="div_icon activ" onclick="showPassword()">
+                        <i class="fa-solid fa-eye icon"></i>
+                        <div class="div_clear"></div>
+                    </div>
+                </div>
+
+                <div class="div_submit div_input">
+
+                    <input id="submit" type="submit" placeholder="Password" value="Send" onclick="send()">
+                
+                </div>
+        
+            </form>
+        
+        </div>
+    
+    </div>
+
+    <!-- for JS link -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- enf JS link -->
+</body>
+</html>
