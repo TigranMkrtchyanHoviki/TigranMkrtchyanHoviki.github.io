@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 .header {
@@ -17,13 +17,14 @@
     z-index: 40;
 }
 
- .frontend_developer {
+.frontend_developer {
     width: 200px;
     height: 70px;
     position: relative;
 }
 
-.frontend, .developer {
+.frontend,
+.developer {
     position: absolute;
     font-size: 23px;
 }
@@ -75,7 +76,7 @@
         left: 0px;
     }
 
-    100%{
+    100% {
         top: 0px;
         left: 0px;
     }
@@ -104,7 +105,7 @@
         right: 0px;
     }
 
-    100%{
+    100% {
         top: 40px;
         right: 0px;
     }
@@ -116,26 +117,26 @@
     padding: 0 40px;
 }
 
-.nav > ul {
+.nav>ul {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.nav > ul > li {
+.nav>ul>li {
     margin-right: 30px;
     list-style-type: none;
     /* transition: 0.2s; */
 }
 
-.nav > ul > li > a {
+.nav>ul>li>a {
     text-decoration: none;
     color: rgb(39, 37, 54)
 }
 
 .my_name {
     font-size: 23px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-left: 50px;
 }
 
@@ -144,7 +145,7 @@
     transition: 1s;
 }
 
-.nav > ul > li:hover {
+.nav>ul>li:hover {
     opacity: 0.6;
 }
 
@@ -167,7 +168,8 @@
     background: #eee4db;
 }
 
-.burger::before, .burger::after {
+.burger::before,
+.burger::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -222,7 +224,9 @@
     display: flex;
     flex-flow: wrap;
     background: url("../imgs/my img/Tigran.png");
+    background-size: cover;
 }
+
 
 .entyr_div_img {
     width: 100%;
@@ -236,13 +240,13 @@
 
 .entry_for_text {
     /* position: relative; */
-    width:80%;
+    width: 80%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5)
 }
 
 .entry_text {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 100%;
     transform: translate(-100%);
@@ -250,7 +254,16 @@
     height: 887px;
 }
 
-.entyr_text_title, .entry_text_about_me {
+@media only screen and (min-width: 1800px) {
+    .entry_section {
+        height: 1110px;
+    }
+
+
+}
+
+.entyr_text_title,
+.entry_text_about_me {
     text-align: center;
 }
 
@@ -276,7 +289,8 @@
     color: rgb(39, 37, 54);
 }
 
-.entry_first_text, .entry_div_CV {
+.entry_first_text,
+.entry_div_CV {
     margin-top: 50px;
 }
 
@@ -291,11 +305,11 @@
     letter-spacing: 1px;
     box-shadow: rgba(96, 67, 130, 0.5) 0px 2px 6px 0px;
     /* transition: 0.3s; */
-    background: rgb(9,88,166);
-background: -moz-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-background: linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endColorstr="#771cac",GradientType=1);
+    background: rgb(9, 88, 166);
+    background: -moz-linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    background: linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6", endColorstr="#771cac", GradientType=1);
 }
 
 #CV:hover {
@@ -362,17 +376,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     border-radius: 10px;
 }
 
-.portfolio_img_and_name > a {
+.portfolio_img_and_name>a {
     text-decoration: none;
 }
 
-.works > a > img {
+.works>a>img {
     width: 100%;
 }
 
-.works > a:hover img {
-   transform: scale(1.1);
-   transition: all 0.5s ease 0s
+.works>a:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s ease 0s
 }
 
 .name_works {
@@ -386,7 +400,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     transition: 0.5s;
 }
 
-.portfolio_img_and_name > a {
+.portfolio_img_and_name>a {
     text-decoration: none;
     color: #026d75
 }
@@ -398,7 +412,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     background: #f6e7f5;
 }
 
-.about_me_for_img, .about_me_div_for_text {
+.about_me_for_img,
+.about_me_div_for_text {
     width: 50%;
 }
 
@@ -443,13 +458,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     letter-spacing: 3px;
     margin-top: 100px;
     margin-bottom: 50px;
-    color:#630666e8;
+    color: #630666e8;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 .about_me_text {
-    padding-right: 50px ;
+    padding-right: 50px;
     padding-left: 50px;
     padding-bottom: 10px;
     font-size: 23px;
@@ -552,7 +567,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     font-size: 50px;
     font-weight: 700;
     padding: 50px 0px;
-    color:#38013a;
+    color: #38013a;
     letter-spacing: 3px;
 }
 
@@ -578,7 +593,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 .skils_percent_with_numbers {
     text-align: center;
     padding-top: 15px;
-    color:#3b013dad
+    color: #3b013dad
 }
 
 .javascript {
@@ -630,7 +645,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     background: #1b0039;
 }
 
-.language_level_cubik_russian, .language_level_cubik_armenian {
+.language_level_cubik_russian,
+.language_level_cubik_armenian {
     width: 160px;
     display: flex;
     justify-content: space-between;
@@ -640,9 +656,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     width: 210px;
 }
 
-.language_cubik_russian, .language_cubik_armenian {
+.language_cubik_russian,
+.language_cubik_armenian {
     width: 15px;
-    height: 20px; 
+    height: 20px;
     background: #62b7ec;
 }
 
@@ -650,9 +667,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     background: #f65bd9;
 }
 
-.language_level_cubik_english, 
-.language_level_cubik_russian,  
-.language_level_cubik_armenian, 
+.language_level_cubik_english,
+.language_level_cubik_russian,
+.language_level_cubik_armenian,
 .language_level_name {
     margin-top: 25px;
 }
@@ -673,7 +690,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 
 .contact_me_section {
     padding: 100px 0px 60px 0;
-    background: rgb(244, 242, 252);;
+    background: rgb(244, 242, 252);
+    ;
 }
 
 .contact_me_title {
@@ -690,7 +708,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     padding: 30px 0px;
 }
 
-.contact_me_email_name, .contact_me_phone_name {
+.contact_me_email_name,
+.contact_me_phone_name {
     text-align: center;
     padding: 20px 0px;
     color: rgb(96, 67, 130);
@@ -699,12 +718,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     letter-spacing: 1px;
 }
 
-.contact_me_emile a, .contact_me_phone a {
+.contact_me_emile a,
+.contact_me_phone a {
     text-decoration: none;
     color: rgb(109, 104, 137);
 }
 
-.contact_me_emile a:hover, .contact_me_phone a:hover {
+.contact_me_emile a:hover,
+.contact_me_phone a:hover {
     opacity: 0.7;
     transition: 0.2s;
 }
@@ -738,29 +759,29 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     margin: 10px 40px;
 }
 
-.footer_social_media > div {
+.footer_social_media>div {
     width: 40px;
     height: 40px;
-    background: rgb(9,88,166);
-background: -moz-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-background: linear-gradient(180deg, rgba(9,88,166,1) 0%, rgba(54,64,168,0.9445028011204482) 29%, rgba(81,49,170,1) 50%, rgba(95,41,171,1) 66%, rgba(119,28,172,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endColorstr="#771cac",GradientType=1);
+    background: rgb(9, 88, 166);
+    background: -moz-linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    background: linear-gradient(180deg, rgba(9, 88, 166, 1) 0%, rgba(54, 64, 168, 0.9445028011204482) 29%, rgba(81, 49, 170, 1) 50%, rgba(95, 41, 171, 1) 66%, rgba(119, 28, 172, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6", endColorstr="#771cac", GradientType=1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
 }
 
-.footer_social_media > div > a > i {
+.footer_social_media>div>a>i {
     color: #ffffff;
 }
 
-.footer_social_media > div > a {
+.footer_social_media>div>a {
     margin: 0 auto;
 }
 
-.footer_social_media > div:hover {
+.footer_social_media>div:hover {
     background: #450271;
 }
 
@@ -772,28 +793,36 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 
 @media screen and (max-width: 768px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
-    
+
     .burger {
         display: flex;
         position: fixed;
-        top: 41px; 
+        top: 41px;
         right: 70px;
     }
 
-    .nav{
+    .nav {
         display: none;
         flex-flow: column;
         width: 100%;
         height: 100%;
         position: fixed;
-        top: 0; bottom: 0; left: 0; right: 0;;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        ;
         padding: 50px 40px;
         z-index: 50;
         background: #e999ec;
@@ -801,13 +830,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
         animation: burgerAnimation 0.3s;
     }
 
-    .nav > ul {
+    .nav>ul {
         display: flex;
         flex-flow: column;
         row-gap: 30px;
     }
 
-    .nav > ul > li > a {
+    .nav>ul>li>a {
         color: #ffffff;
     }
 
@@ -824,13 +853,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 
     /* entry section */
 
-    .entry_text {
-        margin-right: -10px;
-    }
-    
+
+
     /* About me section */
 
-    .about_me_for_img, .about_me_div_for_text {
+    .about_me_for_img,
+    .about_me_div_for_text {
         width: 100%;
     }
 
@@ -870,7 +898,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     }
 
     .education_trainings {
-        width: 100%;
         margin-left: 85px;
         margin-bottom: 30px;
     }
@@ -916,12 +943,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 
 /* 586px-ից սկսած և ներք  */
 
-@media screen and (max-width: 586px){
+@media screen and (max-width: 586px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
@@ -934,9 +965,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
         padding-top: 40px;
     }
 
-    .entry_text {
-        transform: translate(-95%);
-    }
+
 
     .educaion_title {
         padding-left: 10px;
@@ -944,19 +973,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     }
 }
 
-@media screen and (max-width: 541px){
+@media screen and (max-width: 541px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
 
-    .entry_text {
-        transform: translate(-90%);
-    }
+
 
     .educaion_title {
         padding-left: 10px;
@@ -964,19 +995,21 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     }
 }
 
-@media screen and (max-width: 500px){
-    
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+@media screen and (max-width: 500px) {
+
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
 
-    .entry_text {
-        transform: translate(-85%);
-    }
+
 
     .educaion_title {
         padding-left: 0px;
@@ -984,12 +1017,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     }
 }
 
-@media screen and (max-width: 473px){
+@media screen and (max-width: 473px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
@@ -999,9 +1036,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
         width: 100%;
     }
 
-    .entry_text {
-        transform: translate(-80%);
-    }
+
 
     .educaion_title {
         padding-left: 0px;
@@ -1009,12 +1044,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     }
 }
 
-@media screen and (max-width: 405px){
+@media screen and (max-width: 405px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
@@ -1023,9 +1062,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
         background: url("../imgs/my img/Tigran5.png");
     }
 
-    .entry_text {
-        transform: translate(-80%);
-    }
+
 
     .educaion_title {
         padding-left: 0px;
@@ -1050,10 +1087,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
 
 @media screen and (max-width: 576px) {
 
-    .about_me_section, .entry_section,
-    .skills_section, .footer_section,
-    .languages_section, .education_section, 
-    .contact_me_section, .project_with_js_section,
+    .about_me_section,
+    .entry_section,
+    .skills_section,
+    .footer_section,
+    .languages_section,
+    .education_section,
+    .contact_me_section,
+    .project_with_js_section,
     .div_of_title_portfolio {
         width: 100%;
     }
@@ -1076,7 +1117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
         font-size: 23px;
         padding-bottom: 30px;
     }
-    
+
     /* contact me section */
 
     .contact_me_title {
@@ -1089,6 +1130,5 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0958a6",endCo
     .burger {
         right: 30px;
     }
-    
-} 
 
+}
